@@ -1,0 +1,4 @@
+.earbuds:hover{
+    transition: all 0.2s ease-in;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4);
+}
