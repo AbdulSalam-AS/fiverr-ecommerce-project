@@ -5,7 +5,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { RiShareBoxLine } from "react-icons/ri";
 import { GrFormNextLink } from "react-icons/gr";
-import { CgProfile } from "react-icons/cg";
+
 import "./Home.css";
 
 const Home = () => {
@@ -37,8 +37,8 @@ const Home = () => {
               <BsInstagram className="size-6 transition-all hover:scale-120 cursor-pointer" />
               <FaLinkedin className="size-6 transition-all hover:scale-120 cursor-pointer" />
             </ul>
-            <div className="absolute -top-14 right-0  w-145">
-              <img src="/BlueHeadset.png" className="rotate-14 w-full" />
+            <div className="absolute -top-14 right-0 w-145">
+              <img src="/BlueHeadset.png" className="rotate-14  rounded-full" />
             </div>
             <button
               className="bg-white/70 flex items-center px-4 py-1.5 font-bold gap-1.5 rounded-full absolute right-30 bottom-33 cursor-pointer transition-all duration-120 ease-in-out hover:bg-white hover:scale-110"
@@ -80,12 +80,53 @@ const Home = () => {
                   ⭐ 4.6
                 </p>
               </div>
-              <div className="flex items-center align-center px-8  mt-3 ">
-                <CgProfile className="bg-white" />
+              <div className="flex items-center align-center px-8  mt-3 justify-between">
+                <div className="flex">
+                  <div className="bg-black rounded-full p-1 -mr-5">
+                    <div className="bg-white rounded-full p-1">
+                      <img
+                        className="rounded-full w-15 h-15"
+                        src="/profile1.avif"
+                      />
+                    </div>
+                  </div>
+                  <div className="bg-black rounded-full p-1 -mr-5">
+                    <div className="bg-white rounded-full p-1">
+                      <img
+                        className="rounded-full w-15 h-15"
+                        src="/profile2.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div className="bg-black rounded-full p-1 -mr-5">
+                    <div className="bg-white rounded-full p-1">
+                      <img
+                        className="rounded-full w-15 h-15"
+                        src="/profile3.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="text-white">
+                  <p className="text-2xl font-bold">5m+</p>
+                  <p className="text-gray-500">Downloads</p>
+                </div>
               </div>
             </div>
-            <div className="bg-white text-black grid-cols-1 rounded-3xl">
-              <p className="text-2xl">Listening Has Been Released</p>
+            <div
+              className="text-black grid-cols-1 rounded-3xl flex items-center justify-between gap-2 px-4 "
+              style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
+            >
+              <div className="w-33 h-28">
+                <img src="/ipod.jpg" className="rounded-2xl w-auto h-full" />
+              </div>
+              <div className="flex flex-col start justify-between w-70 h-28 pl-4">
+                <p className="text-[1.2rem] font-bold">
+                  Listening Has Been Released
+                </p>
+                <p>⭐⭐⭐⭐⭐ 5.0</p>
+                <p className="text-gray-400">46 Reviews</p>
+              </div>
             </div>
           </div>
         </div>
@@ -120,6 +161,15 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="text-center gap-2 flex flex-col h-40">
+        <h1 className="text-5xl font-bold">Discover Your Sound</h1>
+        <p className="text-gray-400">
+          Explore our curated collections designed for every audiophile.
+        </p>
+      </div>
+      <div>
+        
       </div>
     </div>
   );

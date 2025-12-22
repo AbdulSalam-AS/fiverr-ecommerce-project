@@ -4,12 +4,12 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 const Header = () => {
   return (
-    <div className="flex justify-between items-center h-20">
+    <div className="flex justify-between items-center h-20 z-100">
       <div className="font-extrabold text-[1.8em] cursor-pointer w-40 text-center rounded-md transition-all hover:scale-95">
         Ecommerce
       </div>
 
-      <div className="search relative">
+      <div className="search relative z-100">
         <input
           className="bg-gray-100 w-[35em] py-2.5 px-6 outline-0 rounded-[2em] transition-shadow duration-200 ease-in hover:shadow-xl"
           type="text"
