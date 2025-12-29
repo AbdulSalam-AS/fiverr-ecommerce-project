@@ -10,12 +10,12 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="lg:max-w-[1520px]">
       {/* Hero Section */}
-      <div className="h-[90vh]">
-        <div className=" grid grid-cols-1 lg:grid-cols-5 gap-5">
+      <div className="max-lg:h-[90vh]">
+        <div className=" grid grid-cols-1 lg:grid-cols-5 gap-5 ">
           <div className="lg:col-span-4 ">
-            <div className="bg-gray-100 w-full h-116 rounded-3xl px-5 pt-10 pb-5 flex flex-col gap-3 relative transition-all duration-200 ease-in earbuds">
+            <div className="bg-gray-100  h-116 rounded-3xl px-5 pt-10 pb-5 flex flex-col gap-3 relative transition-all duration-200 ease-in earbuds ">
               <p>Music is Classic</p>
               <div>
                 <p className="font-extrabold text-[3.5rem]">
@@ -183,7 +183,7 @@ const Home = () => {
       </div>
 
       {/*next section*/}
-      <div className="h-[90vh]">
+      <div className="max-lg:h-[90vh]">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-5 gap-10">
           <div className="rounded-md grid-cols-1 relative h-135">
             <img src="/headset_black_background.png" className="rounded-3xl" />

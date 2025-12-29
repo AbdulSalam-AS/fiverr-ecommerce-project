@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="px-10">
+    <div className="flex flex-col items-center justify-center px-10">
       <Header />
       <Outlet />
     </div>
