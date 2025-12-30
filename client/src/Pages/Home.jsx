@@ -13,88 +13,95 @@ const Home = () => {
     <div className="lg:max-w-[1520px]">
       {/* Hero Section */}
       <div className="max-lg:h-[90vh]">
-        <div className=" grid grid-cols-1 lg:grid-cols-5 gap-5 ">
+        <div className=" grid sm:grid-cols-1 lg:grid-cols-5 gap-5 ">
           <div className="lg:col-span-4 ">
-            <div className="bg-gray-100  h-116 rounded-3xl px-5 pt-10 pb-5 flex flex-col gap-3 relative transition-all duration-200 ease-in earbuds ">
+            <div className="bg-gray-100 sm:h-78 md:h-100 lg:h-116 rounded-3xl px-5 pt-10 pb-5 flex flex-col gap-3 relative transition-all duration-200 ease-in earbuds ">
               <p>Music is Classic</p>
               <div>
-                <p className="font-extrabold text-[3.5rem]">
+                <p className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3.5rem]">
                   Sequoia Insipring
                 </p>
-                <p className="font-extrabold text-[3.5rem] -mt-3">Musico.</p>
+                <p className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] -mt-3">
+                  Musico.
+                </p>
               </div>
-              <div>
-                <p>Making your dream music come true stay with</p>
-                <p>Sequios Sounds!</p>
+              <div className="w-40 md:w-90 lg:w-100 text-[0.7em] sm:text-[0.8em] md:text-[1em] lg:text-[1.2em] wrap-normal">
+                <p>
+                  Making your dream music come true stay with Sequios Sounds!
+                </p>
               </div>
               <div className="flex gap-2 items-center mt-5">
-                <button className="flex justify-around w-55 h-12 items-center rounded-full bg-lime-300 px-6 cursor-pointer transition-all hover:scale-105">
-                  <p className="font-bold">View All Products</p>
-                  <FaArrowRight className="size-4.5" />
+                <button className="flex justify-around px-3 gap-2 md:w-48 h-8 md:h-10 md:gap-2 md:px-4 lg:w-55 lg:h-12 lg:px-6 items-center rounded-full bg-lime-300 cursor-pointer transition-all hover:scale-105">
+                  <p className="text-[0.7em] md:text-[0.9em] font-bold">
+                    View All Products
+                  </p>
+                  <FaArrowRight className="size-3 md:size-3.5 lg:size-4.5" />
                 </button>
-                <hr className="w-1 bg-gray-200 h-full text-white ml-3" />
-                <h1 className="font-bold text-3xl ml-3">01</h1>
+                <hr className="w-1 bg-gray-200 h-8 lg:h-full text-white ml-3" />
+                <h1 className="font-bold md:text-2xl lg:text-3xl ml-3">01</h1>
               </div>
               <ul className="flex gap-6 mt-8">
-                <FaTwitter className="size-6 transition-all hover:scale-120 cursor-pointer" />
-                <FaTiktok className="size-6 transition-all hover:scale-120 cursor-pointer " />
-                <BsInstagram className="size-6 transition-all hover:scale-120 cursor-pointer" />
-                <FaLinkedin className="size-6 transition-all hover:scale-120 cursor-pointer" />
+                <FaTwitter className="md:size-6 lg:size-6 transition-all hover:scale-120 cursor-pointer" />
+                <FaTiktok className="md:size-6 lg:size-6 transition-all hover:scale-120 cursor-pointer " />
+                <BsInstagram className="md:size-6 lg:size-6 transition-all hover:scale-120 cursor-pointer" />
+                <FaLinkedin className="md:size-6 lg:size-6 transition-all hover:scale-120 cursor-pointer" />
               </ul>
-              <div className="absolute -top-14 right-0 w-145">
+              <div className="absolute -right-8 w-70 top-1 sm:w-70 md:w-100 md:top-4 lg:-top-14 lg:w-145">
                 <img
                   src="/BlueHeadset.png"
-                  className="rotate-14  rounded-full"
+                  className="rotate-14 rounded-full"
                 />
               </div>
               <button
-                className="bg-white/70 flex items-center px-4 py-1.5 font-bold gap-1.5 rounded-full absolute right-30 bottom-33 cursor-pointer transition-all duration-120 ease-in-out hover:bg-white hover:scale-110"
+                className="bg-white/70 flex items-center px-4 py-1.5 font-bold gap-1.5 rounded-full absolute bottom-28 right-2 text-[0.8em] sm:text-[0.7em] sm:right-10 sm:bottom-18 md:text-[0.8em] md:right-15 md:bottom-22 lg:right-30 lg:bottom-33 cursor-pointer transition-all duration-120 ease-in-out hover:bg-white hover:scale-110"
                 style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
               >
-                <RiShareBoxLine className="size-4.5" />
+                <RiShareBoxLine className="size-3 sm:size-3.5 md:size-4 lg:size-4.5" />
                 View
               </button>
             </div>
-            <div className="grid lg:grid-cols-3 gap-6 p-4 h-44">
-              <div className="bg-black  grid-cols-1 rounded-3xl">
-                <div className="flex items-center justify-between mt-4 px-8">
-                  <p className="font-normal text-2xl text-white">
+            <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-3 lg:grid-cols-3 mt-5 gap-5 md:gap-4 lg:gap-6 md:p-4 md:h-38 lg:h-44 lg:p-4">
+              <div className="bg-black row-end-1 h-35 md:grid-cols-1 md:row-span-1 md:h-30 lg:grid-cols-1 lg:row-span-1 lg:h-36 rounded-3xl">
+                <div className="flex items-center justify-between mt-4 px-8 md:px-4 lg:px-8">
+                  <p className="font-normal md:text-[0.8em] lg:text-[1.1em] text-white">
                     More Products
                   </p>
-                  <p className="text-gray-400">460 plus items</p>
+                  <p className="md:text-[0.8em] lg:text-[1.1em] text-gray-400">
+                    460 plus items
+                  </p>
                 </div>
-                <div className="flex items-center align-center px-8  mt-3 ">
+                <div className="flex items-center align-center md:px-4 px-8 mt-3 ">
                   <img
                     src="/airpods.jpeg"
-                    className="w-16 h-16 rounded-2xl -mr-2"
+                    className="w-16 h-16 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-2xl -mr-2"
                   />
                   <img
                     src="/portablebluetoothspeaker.jpg"
-                    className="w-18 h-18 rounded-2xl -mr-2 border-4"
+                    className="w-18 h-18 md:w-14 md:h-14 lg:w-18 lg:h-18 rounded-2xl -mr-2 border-4"
                   />
                   <img
                     src="/black_headset.jpg"
-                    className="w-18 h-18 rounded-2xl -mr-2 border-4"
+                    className="w-18 h-18 md:w-14 md:h-14 lg:w-18 lg:h-18 rounded-2xl -mr-2 border-4"
                   />
                   <img
                     src="/iphone.jpg"
-                    className="w-18 h-18 rounded-2xl border-4"
+                    className="w-18 h-18 md:w-14 md:h-14 lg:w-18 lg:h-18 rounded-2xl border-4"
                   />
                 </div>
               </div>
-              <div className="bg-black  grid-cols-1 rounded-3xl">
-                <div className="flex items-center justify-between mt-4 px-8">
-                  <p className="font-normal text-2xl text-white">Popular</p>
-                  <p className="text-white font-light text-center text-[1.4rem]">
+              <div className="bg-black row-end-2 h-35 md:grid-cols-1 md:row-span-1 md:h-30 lg:grid-cols-1 lg:row-span-1 lg:h-36 rounded-3xl">
+                <div className="flex items-center justify-between px-10 md:px-4 mt-4 lg:px-8">
+                  <p className="font-normal lg:text-2xl text-white">Popular</p>
+                  <p className="text-white font-light text-center mr-8 text-[1.1rem] lg:text-[1.4rem]">
                     ⭐ 4.6
                   </p>
                 </div>
-                <div className="flex items-center align-center px-8  mt-3 justify-between">
+                <div className="flex items-center align-center px-8 md:px-2.5 lg:px-8 mt-3 justify-between">
                   <div className="flex">
                     <div className="bg-black rounded-full p-1 -mr-5">
                       <div className="bg-white rounded-full p-1">
                         <img
-                          className="rounded-full w-15 h-15"
+                          className="rounded-full w-15 h-15 md:w-10 md:h-10 lg:w-15 lg:h-15"
                           src="/profile1.avif"
                         />
                       </div>
@@ -102,7 +109,7 @@ const Home = () => {
                     <div className="bg-black rounded-full p-1 -mr-5">
                       <div className="bg-white rounded-full p-1">
                         <img
-                          className="rounded-full w-15 h-15"
+                          className="rounded-full w-15 h-15 md:w-10 md:h-10 lg:w-15 lg:h-15"
                           src="/profile2.jpg"
                         />
                       </div>
@@ -110,38 +117,42 @@ const Home = () => {
                     <div className="bg-black rounded-full p-1 -mr-5">
                       <div className="bg-white rounded-full p-1">
                         <img
-                          className="rounded-full w-15 h-15"
+                          className="rounded-full w-15 h-15 md:w-10 md:h-10 lg:w-15 lg:h-15"
                           src="/profile3.jpg"
                         />
                       </div>
                     </div>
                   </div>
-                  <div className="text-white">
-                    <p className="text-2xl font-bold">5m+</p>
-                    <p className="text-gray-500">Downloads</p>
+                  <div className="text-white ">
+                    <p className="md:text-[1em] lg:text-2xl font-bold">5m+</p>
+                    <p className="md:text-[0.8em] text-gray-500">Downloads</p>
                   </div>
                 </div>
               </div>
               <div
-                className="text-black grid-cols-1 rounded-3xl flex items-center justify-between gap-2 px-4 "
+                className="text-black row-end-3 md:grid-cols-1 md:row-span-1 md:h-30 lg:grid-cols-1 lg:row-span-1 lg:h-36 rounded-3xl flex items-center justify-between gap-2 px-4"
                 style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
               >
-                <div className="w-33 h-28">
+                <div className="w-33 h-28 md:w-28 md:h-22 lg:w-33 lg:h-28">
                   <img src="/ipod.jpg" className="rounded-2xl w-auto h-full" />
                 </div>
-                <div className="flex flex-col start justify-between w-70 h-28 pl-4">
-                  <p className="text-[1.2rem] font-bold">
+                <div className="flex flex-col start justify-between h-30 pl-4 md:pl-2 md:h-23 lg:w-70 lg:h-28 lg:pl-4">
+                  <p className="text-[1.2rem] md:text-[0.9rem] lg:text-[1.2rem] font-bold">
                     Listening Has Been Released
                   </p>
-                  <p>⭐⭐⭐⭐⭐ 5.0</p>
-                  <p className="text-gray-400">46 Reviews</p>
+                  <p className="text-[1.1rem] md:text-[0.8rem] lg:text-[1.2rem]">
+                    ⭐⭐⭐⭐⭐ 5.0
+                  </p>
+                  <p className="text-[1.1rem] md:text-[0.8rem] lg:text-[1.2rem] text-gray-400">
+                    46 Reviews
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="lg:col-span-1">
-            <div className="grid grid-rows-6 gap-4">
-              <div className="row-span-1 border border-gray-300 h-30 rounded-2xl flex flex-col gap-3 pt-4 pl-3 ">
+          <div className="-mt-20 md:m-0 lg:m-0 lg:col-span-1 ">
+            <div className="grid grid-rows-3 md:grid-cols-2 md:gap-x-8 md:gap-y-6 lg:grid-rows-6 lg:gap-4">
+              <div className="row-end-1 col-end-1 md:col-end-1 lg:row-span-1 border border-gray-300 md:h-25 md:w-60 md:pt-2 md:pl-4 md:px-4 lg:h-35 lg:w-70 rounded-2xl flex flex-col gap-3 lg:pt-6 lg:pl-4 ">
                 <p className="font-medium text-[1.3rem]">Popular Colors</p>
                 <ul className="flex gap-3">
                   <li className="w-10 h-10 bg-blue-500 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
@@ -151,7 +162,7 @@ const Home = () => {
                   <li className="w-10 h-10 bg-cyan-400 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
                 </ul>
               </div>
-              <div className="row-span-2 relative h-50 transition-all rounded-2xl duration-200 ease-in earbuds">
+              <div className="md:col-end-1 md:w-60 md:h-50 lg:row-span-2 relative lg:h-45 lg:w-70 transition-all rounded-2xl duration-200 ease-in earbuds">
                 <p className="absolute text-white font-bold left-5 top-2 text-[1.5rem]">
                   New Gen X-Bud
                 </p>
@@ -161,20 +172,23 @@ const Home = () => {
                 />
                 <GrFormNextLink className="absolute bottom-3 right-3 -rotate-52 bg-white rounded-full size-7.5 transition-all duration-150 ease-out hover:scale-115 hover:bg-lime-300 cursor-pointer" />
               </div>
-              <div className="row-span-3 -mt-12 rounded-2xl h-70 relative transition-all duration-200 ease-in earbuds">
+              <div className="md:col-end-2 md:row-end-1 md:row-span-2 md:h-80 md:w-120 lg:row-span-3 lg:col-end-1 lg:-mt-28 rounded-2xl lg:h-72 lg:w-full relative transition-all duration-200 ease-in earbuds">
                 <p className="absolute font-bold left-5 top-5 text-[1.8rem] text-white">
                   Grey Surface
                 </p>
                 <p className="absolute font-bold left-5 top-13 text-[1.6rem] text-white">
                   Headphone
                 </p>
-                <img src="/HeadPhones.png" className="rounded-2xl " />
+                <img
+                  src="/HeadPhones.png"
+                  className="md:rounded-3xl lg:rounded-2xl md:w-120 md:h-81 lg:w-full lg:h-full"
+                />
                 <GrFormNextLink className="absolute bottom-2 right-3 -rotate-52 bg-white rounded-full size-7.5 transition-all duration-150 ease-out hover:scale-115 hover:bg-lime-300 cursor-pointer" />
               </div>
             </div>
           </div>
         </div>
-        <div className="text-center gap-2 flex flex-col -mt-25">
+        <div className="text-center gap-2 flex flex-col md:mt-15 md:mb-15 lg:-mt-50 lg:mb-25">
           <h1 className="text-5xl font-bold">Discover Your Sound</h1>
           <p className="text-gray-400">
             Explore our curated collections designed for every audiophile.
@@ -183,7 +197,7 @@ const Home = () => {
       </div>
 
       {/*next section*/}
-      <div className="max-lg:h-[90vh]">
+      {/* <div className="max-lg:h-[90vh]">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-5 gap-10">
           <div className="rounded-md grid-cols-1 relative h-135">
             <img src="/headset_black_background.png" className="rounded-3xl" />
@@ -251,7 +265,7 @@ const Home = () => {
             <img src="/tablet.png" className="rounded-b-3xl h-90 w-full" />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
