@@ -10,7 +10,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="lg:max-w-[1520px]">
+    <div className="lg:max-w-[1520px] ">
       {/* Hero Section */}
       <div className="max-lg:h-[90vh]">
         <div className=" grid sm:grid-cols-1 lg:grid-cols-5 gap-5 ">
@@ -151,18 +151,18 @@ const Home = () => {
             </div>
           </div>
           <div className="-mt-20 md:m-0 lg:m-0 lg:col-span-1 ">
-            <div className="grid grid-rows-3 md:grid-cols-2 md:gap-x-8 md:gap-y-6 lg:grid-rows-6 lg:gap-4">
-              <div className="row-end-1 col-end-1 md:col-end-1 lg:row-span-1 border border-gray-300 md:h-25 md:w-60 md:pt-2 md:pl-4 md:px-4 lg:h-35 lg:w-70 rounded-2xl flex flex-col gap-3 lg:pt-6 lg:pl-4 ">
+            <div className="grid grid-rows-3 gap-8 md:grid-cols-2 md:gap-x-8 md:gap-y-6 lg:grid-rows-6 lg:gap-4">
+              <div className="row-end-1 col-end-1 md:col-end-1 pl-5 py-3 lg:row-span-1 border border-gray-300 md:h-25 md:w-60 md:pt-2 md:pl-4 md:px-4 lg:h-35 lg:w-70 rounded-2xl flex flex-col gap-2 lg:pt-6 lg:pl-4">
                 <p className="font-medium text-[1.3rem]">Popular Colors</p>
-                <ul className="flex gap-3">
-                  <li className="w-10 h-10 bg-blue-500 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
-                  <li className="w-10 h-10 bg-yellow-400 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
-                  <li className="w-10 h-10 bg-green-500 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
-                  <li className="w-10 h-10 bg-red-500 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
-                  <li className="w-10 h-10 bg-cyan-400 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
+                <ul className=" flex gap-3">
+                  <li className="w-14 h-14 md:w-10 md:h-10 lg:h-10 lg:w-10 bg-blue-500 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
+                  <li className="w-14 h-14 md:w-10 md:h-10 lg:h-10 lg:w-10 bg-yellow-400 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
+                  <li className="w-14 h-14 md:w-10 md:h-10 lg:h-10 lg:w-10 bg-green-500 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
+                  <li className="w-14 h-14 md:w-10 md:h-10 lg:h-10 lg:w-10 bg-red-500 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
+                  <li className="w-14 h-14 md:w-10 md:h-10 lg:h-10 lg:w-10 bg-cyan-400 rounded-xl transition-all duration-200  hover:scale-110 cursor-pointer" />
                 </ul>
               </div>
-              <div className="md:col-end-1 md:w-60 md:h-50 lg:row-span-2 relative lg:h-45 lg:w-70 transition-all rounded-2xl duration-200 ease-in earbuds">
+              <div className="md:col-end-1 h-50 md:w-60 md:h-50 lg:row-span-2 relative lg:h-45 lg:w-70 transition-all rounded-2xl duration-200 ease-in earbuds">
                 <p className="absolute text-white font-bold left-5 top-2 text-[1.5rem]">
                   New Gen X-Bud
                 </p>
@@ -172,23 +172,24 @@ const Home = () => {
                 />
                 <GrFormNextLink className="absolute bottom-3 right-3 -rotate-52 bg-white rounded-full size-7.5 transition-all duration-150 ease-out hover:scale-115 hover:bg-lime-300 cursor-pointer" />
               </div>
-              <div className="md:col-end-2 md:row-end-1 md:row-span-2 md:h-80 md:w-120 lg:row-span-3 lg:col-end-1 lg:-mt-28 rounded-2xl lg:h-72 lg:w-full relative transition-all duration-200 ease-in earbuds">
+
+              <div className="md:col-end-2 md:row-end-1 md:row-span-2 h-70 -mt-10 md:h-80 md:w-120 lg:row-span-3 lg:col-end-1 lg:-mt-28 rounded-2xl lg:h-72 lg:w-full relative transition-all duration-200 ease-in earbuds">
                 <p className="absolute font-bold left-5 top-5 text-[1.8rem] text-white">
                   Grey Surface
                 </p>
-                <p className="absolute font-bold left-5 top-13 text-[1.6rem] text-white">
+                <p className="absolute font-bold top-15  left-5 md:top-13 lg:top-13 text-[1.6rem] text-white">
                   Headphone
                 </p>
                 <img
                   src="/HeadPhones.png"
-                  className="md:rounded-3xl lg:rounded-2xl md:w-120 md:h-81 lg:w-full lg:h-full"
+                  className="rounded-2xl h-70 w-120 md:rounded-3xl lg:rounded-2xl md:w-120 md:h-81 lg:w-full lg:h-full"
                 />
                 <GrFormNextLink className="absolute bottom-2 right-3 -rotate-52 bg-white rounded-full size-7.5 transition-all duration-150 ease-out hover:scale-115 hover:bg-lime-300 cursor-pointer" />
               </div>
             </div>
           </div>
         </div>
-        <div className="text-center gap-2 flex flex-col md:mt-15 md:mb-15 lg:-mt-50 lg:mb-25">
+        <div className="text-center gap-2 flex flex-col -mt-50 md:mt-15 md:mb-15 lg:-mt-50 lg:mb-25">
           <h1 className="text-5xl font-bold">Discover Your Sound</h1>
           <p className="text-gray-400">
             Explore our curated collections designed for every audiophile.
@@ -197,7 +198,7 @@ const Home = () => {
       </div>
 
       {/*next section*/}
-      {/* <div className="max-lg:h-[90vh]">
+      <div className="max-lg:h-[90vh] ">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-5 gap-10">
           <div className="rounded-md grid-cols-1 relative h-135">
             <img src="/headset_black_background.png" className="rounded-3xl" />
@@ -265,7 +266,7 @@ const Home = () => {
             <img src="/tablet.png" className="rounded-b-3xl h-90 w-full" />
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
