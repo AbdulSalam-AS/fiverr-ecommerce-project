@@ -6,22 +6,24 @@ import { FaLinkedin } from "react-icons/fa";
 import { RiShareBoxLine } from "react-icons/ri";
 import { GrFormNextLink } from "react-icons/gr";
 import { IoMdArrowForward } from "react-icons/io";
+
 import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="lg:max-w-[1520px] ">
+    <div className="lg:max-w-[1520px]">
       {/* Hero Section */}
-      <div className="max-lg:h-[90vh]">
+
+      <div className="h-full">
         <div className=" grid sm:grid-cols-1 lg:grid-cols-5 gap-5 ">
           <div className="lg:col-span-4 ">
             <div className="bg-gray-100 sm:h-78 md:h-100 lg:h-116 rounded-3xl px-5 pt-10 pb-5 flex flex-col gap-3 relative transition-all duration-200 ease-in earbuds ">
               <p>Music is Classic</p>
               <div>
-                <p className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3.5rem]">
+                <p className="font-extrabold text-[1.2rem] md:text-[2.5rem] lg:text-[3.5rem]">
                   Sequoia Insipring
                 </p>
-                <p className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] -mt-3">
+                <p className="font-extrabold text-[1.2rem] md:text-[2.5rem] lg:text-[3.5rem] -mt-3">
                   Musico.
                 </p>
               </div>
@@ -46,7 +48,7 @@ const Home = () => {
                 <BsInstagram className="md:size-6 lg:size-6 transition-all hover:scale-120 cursor-pointer" />
                 <FaLinkedin className="md:size-6 lg:size-6 transition-all hover:scale-120 cursor-pointer" />
               </ul>
-              <div className="absolute -right-8 w-70 top-1 sm:w-70 md:w-100 md:top-4 lg:-top-14 lg:w-145">
+              <div className="absolute right-0 lg:-right-8 w-65 top-1 md:w-100 md:top-4 lg:-top-14 lg:w-145">
                 <img
                   src="/BlueHeadset.png"
                   className="rotate-14 rounded-full"
@@ -173,7 +175,7 @@ const Home = () => {
                 <GrFormNextLink className="absolute bottom-3 right-3 -rotate-52 bg-white rounded-full size-7.5 transition-all duration-150 ease-out hover:scale-115 hover:bg-lime-300 cursor-pointer" />
               </div>
 
-              <div className="md:col-end-2 md:row-end-1 md:row-span-2 h-70 -mt-10 md:h-80 md:w-120 lg:row-span-3 lg:col-end-1 lg:-mt-28 rounded-2xl lg:h-72 lg:w-full relative transition-all duration-200 ease-in earbuds">
+              <div className="md:col-end-2 md:row-end-1 md:row-span-2 h-70 -mt-10 md:mt-0 md:h-80 md:w-120 lg:row-span-3 lg:col-end-1 lg:-mt-28 rounded-2xl lg:h-72 lg:w-full relative transition-all duration-200 ease-in earbuds">
                 <p className="absolute font-bold left-5 top-5 text-[1.8rem] text-white">
                   Grey Surface
                 </p>
@@ -198,12 +200,12 @@ const Home = () => {
       </div>
 
       {/*next section*/}
-      <div className="max-lg:h-[90vh] ">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-5 gap-10">
+      <div className="h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 gap-5 md:gap-10 lg:gap-10">
           <div className="rounded-md grid-cols-1 relative h-135">
-            <img src="/headset_black_background.png" className="rounded-3xl" />
-            <div className="bg-black/25 h-75 w-full absolute top-0 rounded-t-3xl"></div>
-            <div className="absolute bottom-30 px-15 ">
+            <img src="/headset_black_background.png" className="rounded-3xl md:h-120" />
+            <div className="bg-black/25 h-50 md:h-75 lg:h-75 w-full absolute top-0 rounded-t-3xl"></div>
+            <div className="absolute bottom-60 md:bottom-30 lg:bottom-30 px-15 ">
               <p className="text-white bg-white/40 rounded-2xl w-60 text-center">
                 HEADPHONE EXCELLENCE
               </p>
@@ -211,12 +213,12 @@ const Home = () => {
                 Unrivaled Clarity
               </p>
             </div>
-            <div className="absolute bg-black h-40 w-full -bottom-15 rounded-b-3xl ">
-              <div className="text-white/55 px-15 mt-5">
+            <div className="absolute bg-black h-40 w-full bottom-10 md:-bottom-15 lg:-bottom-15 rounded-b-3xl ">
+              <div className="text-white/55 px-8 md:px-6 lg:px-15 mt-5">
                 <p>Experience patented noise-cancellation and</p>
                 <p>studio-grade acoustics for the purest sound.</p>
               </div>
-              <p className="text-white mt-6 gap-3 flex px-15">
+              <p className="text-white mt-6 gap-3 flex px-8 md:px-15 lg:px-15">
                 Shop Premium{" "}
                 {
                   <IoMdArrowForward className="size-6 rounded-2xl  transition-all duration-200 hover:bg-white hover:text-black cursor-pointer" />
@@ -224,10 +226,11 @@ const Home = () => {
               </p>
             </div>
           </div>
+
           <div className="rounded-md grid-cols-1 relative">
             <div className="bg-black/30 h-full w-full absolute top-0 rounded-3xl">
               <div className="h-full w-full flex flex-col justify-center items-center-safe">
-                <div className="mt-50">
+                <div className="mt-25 md:mt-50 lg:mt-50">
                   <p className="bg-lime-300 rounded-4xl w-40 text-center font-medium">
                     PORTABLE AUDIO
                   </p>
@@ -242,15 +245,19 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <button className="bg-lime-300 absolute bottom-10 left-20 px-3 py-2 rounded-full font-medium flex items-center gap-1 text-center cursor-pointer transition-all hover:scale-110">
+              <button className="bg-lime-300 absolute bottom-10 left-10 md:left-20 lg:left-20 px-3 py-2 rounded-full font-medium flex items-center gap-1 text-center cursor-pointer transition-all hover:scale-110">
                 &nbsp; Explore Speakers
                 {
                   <GrFormNextLink className="-rotate-40 size-7 rounded-full w-8" />
                 }
               </button>
             </div>
-            <img src="/speaker.png" className="rounded-3xl h-150" />
+            <img
+              src="/speaker.png"
+              className="rounded-3xl h-120 md:h-150 lg:h-150"
+            />
           </div>
+
           <div className="rounded-md grid-cols-1 relative h-135">
             <div className="rounded-t-3xl h-60 flex flex-col justify-evenly items-start bg-gray-300/20 px-10">
               <p className="text-blue-500 font-medium">NEW ARRIVALS</p>
@@ -263,7 +270,10 @@ const Home = () => {
                 View New Arrivals
               </button>
             </div>
-            <img src="/tablet.png" className="rounded-b-3xl h-90 w-full" />
+            <img
+              src="/tablet.png"
+              className="rounded-b-3xl h-70 md:h-90 lg:h-90 w-full"
+            />
           </div>
         </div>
       </div>
