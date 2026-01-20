@@ -48,7 +48,7 @@ const Home = () => {
                 <BsInstagram className="md:size-6 lg:size-6 transition-all hover:scale-120 cursor-pointer" />
                 <FaLinkedin className="md:size-6 lg:size-6 transition-all hover:scale-120 cursor-pointer" />
               </ul>
-              <div className="absolute right-0 lg:-right-8 w-65 top-1 md:w-100 md:top-4 lg:-top-14 lg:w-145">
+              <div className="absolute right-0 lg:-right-8 w-65 top-1 md:w-100 md:top-4 md:right-1 lg:-top-14 lg:w-145">
                 <img
                   src="/BlueHeadset.png"
                   className="rotate-14 rounded-full"
@@ -203,7 +203,10 @@ const Home = () => {
       <div className="h-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 gap-5 md:gap-10 lg:gap-10">
           <div className="rounded-md grid-cols-1 relative h-135">
-            <img src="/headset_black_background.png" className="rounded-3xl md:h-120" />
+            <img
+              src="/headset_black_background.png"
+              className="rounded-3xl md:h-120"
+            />
             <div className="bg-black/25 h-50 md:h-75 lg:h-75 w-full absolute top-0 rounded-t-3xl"></div>
             <div className="absolute bottom-60 md:bottom-30 lg:bottom-30 px-15 ">
               <p className="text-white bg-white/40 rounded-2xl w-60 text-center">
@@ -274,6 +277,108 @@ const Home = () => {
               src="/tablet.png"
               className="rounded-b-3xl h-70 md:h-90 lg:h-90 w-full"
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="h-full max-w-full">
+        <div className="sm:mt-5 md:mt-25 lg:mt-5 max-w-108 md:max-w-190 lg:max-w-full">
+          <div className="flex flex-col gap-1">
+            <h1 className="text-2xl font-medium">Trending Gear</h1>
+            <p className="text-black/50">
+              The most sought-after tech this month
+            </p>
+          </div>
+          <div className="carousel-container mt-5 py-5">
+            <div className="carousel-wrapper">
+              <div className="carousel-item">
+                <div
+                  className="flex flex-col gap-2 px-4 py-4 h-full items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
+                  style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
+                >
+                  <img
+                    src="/tablet.png"
+                    alt="MIC NOVA"
+                    className="w-40 rounded-xl"
+                  />
+                  <p className="text-[0.85rem] text-gray-400 font-medium w-full -mb-2 mt-2">
+                    MIC NOVA
+                  </p>
+                  <div className="flex justify-between items-center w-full -mb-2">
+                    <p className="font-medium text-[1.1rem]">$189</p>
+                    <button className="w-8 h-8 bg-lime-300 rounded-full cursor-pointer transition-all hover:bg-lime-400">
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="carousel-item">
+                <div
+                  className="flex flex-col gap-2 p-4 h-full items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
+                  style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
+                >
+                  <img
+                    src="/speaker.png"
+                    alt="MIC NOVA"
+                    className="w-40 rounded-xl"
+                  />
+                  <p className="text-[0.85rem] text-gray-400 font-medium w-full -mb-2 mt-2">
+                    GO-SPEAKER
+                  </p>
+                  <div className="flex justify-between items-center w-full -mb-2">
+                    <p className="font-medium text-[1.1rem]">$89</p>
+                    <button className="w-8 h-8 bg-lime-300 rounded-full cursor-pointer transition-all hover:bg-lime-400">
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="carousel-item">
+                <div
+                  className="flex flex-col gap-2 p-4 h-full items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
+                  style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
+                >
+                  <img
+                    src="/headset_black_background.png"
+                    alt="MIC NOVA"
+                    className="w-40 rounded-xl"
+                  />
+                  <p className="text-[0.85rem] text-gray-400 font-medium w-full -mb-2 mt-2">
+                    ELITE STUDIO
+                  </p>
+                  <div className="flex justify-between items-center w-full -mb-2">
+                    <p className="font-medium text-[1.1rem]">$599</p>
+                    <button className="w-8 h-8 bg-lime-300 rounded-full cursor-pointer transition-all hover:bg-lime-400">
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="carousel-item">
+                <div
+                  className="flex flex-col gap-2 px-4 py-4 h-full items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
+                  style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
+                >
+                  <img
+                    src="/tablet.png"
+                    alt="MIC NOVA"
+                    className="w-40 rounded-xl"
+                  />
+                  <p className="text-[0.85rem] text-gray-400 font-medium w-full -mb-2 mt-2">
+                    MIC NOVA
+                  </p>
+                  <div className="flex justify-between items-center w-full -mb-2">
+                    <p className="font-medium text-[1.1rem]">$189</p>
+                    <button className="w-8 h-8 bg-lime-300 rounded-full cursor-pointer transition-all hover:bg-lime-400">
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
