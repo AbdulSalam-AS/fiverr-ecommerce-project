@@ -282,24 +282,26 @@ const Home = () => {
       </div>
 
       <div className="h-full max-w-full">
-        <div className="sm:mt-5 md:mt-25 lg:mt-5 max-w-108 md:max-w-190 lg:max-w-full">
+        <div className="sm:mt-5 md:mt-25 lg:mt-10 max-w-108 md:max-w-190 lg:max-w-full">
           <div className="flex flex-col gap-1">
-            <h1 className="text-2xl font-medium">Trending Gear</h1>
-            <p className="text-black/50">
+            <h1 className="sm:text-2xl lg:text-5xl font-medium">
+              Trending Gear
+            </h1>
+            <p className="text-black/50 lg:text-2xl">
               The most sought-after tech this month
             </p>
           </div>
-          <div className="carousel-container mt-5 py-5">
+          <div className="carousel-container mt-5 py-5 flex">
             <div className="carousel-wrapper">
               <div className="carousel-item">
                 <div
-                  className="flex flex-col gap-2 px-4 py-4 h-full items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
+                  className="flex flex-col gap-2 px-4 py-4 h-55 w-40 md:h-70 md:w-55 lg:h-95 lg:w-80 items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
                   style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
                 >
                   <img
                     src="/tablet.png"
                     alt="MIC NOVA"
-                    className="w-40 rounded-xl"
+                    className="w-40 md:w-50 lg:w-100 rounded-xl"
                   />
                   <p className="text-[0.85rem] text-gray-400 font-medium w-full -mb-2 mt-2">
                     MIC NOVA
@@ -315,13 +317,13 @@ const Home = () => {
 
               <div className="carousel-item">
                 <div
-                  className="flex flex-col gap-2 p-4 h-full items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
+                  className="flex flex-col gap-2 p-4 h-55 w-40 md:h-70 md:w-55 lg:h-95 lg:w-80 items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
                   style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
                 >
                   <img
                     src="/speaker.png"
                     alt="MIC NOVA"
-                    className="w-40 rounded-xl"
+                    className="w-40 md:w-50 lg:w-100 rounded-xl"
                   />
                   <p className="text-[0.85rem] text-gray-400 font-medium w-full -mb-2 mt-2">
                     GO-SPEAKER
@@ -337,13 +339,13 @@ const Home = () => {
 
               <div className="carousel-item">
                 <div
-                  className="flex flex-col gap-2 p-4 h-full items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
+                  className="flex flex-col gap-2 p-4 h-55 w-40 md:h-70 md:w-55 lg:h-95 lg:w-80 items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
                   style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
                 >
                   <img
                     src="/headset_black_background.png"
                     alt="MIC NOVA"
-                    className="w-40 rounded-xl"
+                    className="w-40 md:w-50 lg:w-100 rounded-xl"
                   />
                   <p className="text-[0.85rem] text-gray-400 font-medium w-full -mb-2 mt-2">
                     ELITE STUDIO
@@ -359,13 +361,13 @@ const Home = () => {
 
               <div className="carousel-item">
                 <div
-                  className="flex flex-col gap-2 px-4 py-4 h-full items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
+                  className="flex flex-col gap-2 px-4 py-4 h-55 w-40 md:h-70 md:w-55 lg:h-95 lg:w-80 items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105"
                   style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
                 >
                   <img
                     src="/tablet.png"
                     alt="MIC NOVA"
-                    className="w-40 rounded-xl"
+                    className="w-40 md:w-50 lg:w-100 rounded-xl"
                   />
                   <p className="text-[0.85rem] text-gray-400 font-medium w-full -mb-2 mt-2">
                     MIC NOVA

@@ -1,37 +1,48 @@
-.earbuds:hover{
-    transition: all 0.2s ease-in;
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4);
+.earbuds:hover {
+  transition: all 0.2s ease-in;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Infinite Carousel Styles */
 .carousel-container {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .carousel-wrapper {
-    display: flex;
-    gap: 1.5rem;
-    animation: scrollLeft 40s linear infinite;
-    width: fit-content;
+  display: flex;
+  animation: scrollLeft 40s linear infinite;
+  width: fit-content;
 }
 
 .carousel-wrapper:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .carousel-item {
-    flex: 0 0 220px;
-    min-width: 220px;
+  flex: 0 0 220px;
+  min-width: 220px;
 }
 
 @keyframes scrollLeft {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (width > 760px) {
+  .carousel-wrapper {
+    gap: 1rem;
+  }
+}
+
+@media screen and (width > 1000px) {
+  .carousel-wrapper {
+    gap: 8rem;
+  }
 }
