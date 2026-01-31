@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { RiShareBoxLine } from "react-icons/ri";
 import { GrFormNextLink } from "react-icons/gr";
 import { IoMdArrowForward } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 import "./Home.css";
 
@@ -380,6 +381,81 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="carousel-item">
+                <div
+                  className="flex flex-col gap-2 px-4 py-4 h-55 w-40 md:h-70 md:w-55 lg:h-95 lg:w-80 items-center justify-center border border-gray-200 rounded-2xl cursor-pointer transition-all ease-in-out hover:scale-105
+                  bg-gray-100"
+                  style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
+                >
+                  <img
+                    src="/black_headset.jpg"
+                    alt="MIC NOVA"
+                    className="w-40 md:w-50 lg:w-100 rounded-xl"
+                  />
+                  <p className="text-[0.85rem] text-gray-400 font-medium w-full -mb-2 mt-2">
+                    MIC NOVA
+                  </p>
+                  <div className="flex justify-between items-center w-full -mb-2">
+                    <p className="font-medium text-[1.1rem]">$189</p>
+                    <button className="w-8 h-8 bg-lime-300 rounded-full cursor-pointer transition-all hover:bg-lime-400">
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="h-[40vh] max-w-full mt-10">
+        <div
+          className="bg-[#e2eef1] rounded-2xl w-auto py-4"
+          style={{ boxShadow: "2px 2px 12px rgba(0,0,0,0.2)" }}
+        >
+          <div className="flex items-center justify-between px-4 py-2">
+            <h1 className="text-2xl font-bold">Headset</h1>
+            <button className="text-blue-300 cursor-pointer text-[0.9rem] flex items-center gap-1">
+              View All <IoIosArrowForward />
+            </button>
+          </div>
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 px-3 py-2 md:px-5 lg:px-5">
+            <div className="flex flex-col items-center justify-between py-3 rounded-xl h-36 lg:h-62 bg-white transition-all duration-150 ease-in hover:scale-105 cursor-pointer">
+              <img src="./black_headset.jpg" alt="" className="w-22 lg:w-45" />
+              <p className="text-[0.8rem] lg:text-xl font-mono font-medium">
+                Black Headset
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-between py-3 rounded-xl h-36 lg:h-62 bg-white  transition-all duration-150 ease-in hover:scale-105 cursor-pointer">
+              <img src="./airpods.jpeg" alt="" className="w-22 lg:w-45" />
+              <p className="text-[0.8rem] lg:text-xl font-mono font-medium">
+                Airpods
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-between py-3 rounded-xl h-36 lg:h-62 bg-white  transition-all duration-150 ease-in hover:scale-105 cursor-pointer">
+              <img src="./b2b-wireless.webp" alt="" className="w-22 lg:w-45 mt-2 lg:mt-5" />
+              <p className="text-[0.8rem] lg:text-xl font-mono font-medium">
+                B2B Wireless
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-between py-3 rounded-xl h-36 lg:h-62 bg-white  transition-all duration-150 ease-in hover:scale-105 cursor-pointer">
+              <img src="./ps4_vr_headset.webp" alt="" className="w-22 lg:w-45 mt-5 lg:mt-10" />
+              <p className="text-[0.8rem] lg:text-xl font-mono font-medium">
+                Black Headset
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-between py-3 rounded-xl h-36 lg:h-62 bg-white  transition-all duration-150 ease-in hover:scale-105 cursor-pointer">
+              <img src="./VerisonGTech 2000.jpg" alt="" className="w-22 lg:w-45" />
+              <p className="text-[0.8rem] lg:text-xl font-mono font-medium">
+                Verison GTech 2000
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-between py-3 rounded-xl h-36 lg:h-62 bg-white  transition-all duration-150 ease-in hover:scale-105 cursor-pointer">
+              <img src="./Steelseries.webp" alt="" className="w-22 lg:w-45" />
+              <p className="text-[0.8rem] lg:text-xl font-mono font-medium">
+                Steel Series
+              </p>
             </div>
           </div>
         </div>
