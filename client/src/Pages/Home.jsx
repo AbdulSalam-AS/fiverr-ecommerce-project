@@ -7,6 +7,8 @@ import { RiShareBoxLine } from "react-icons/ri";
 import { GrFormNextLink } from "react-icons/gr";
 import { IoMdArrowForward } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { TestimonialsSection, NewsletterSection } from "./NewSections";
+import Footer from "./Footer";
 
 import "./Home.css";
 
@@ -397,7 +399,7 @@ const Home = () => {
                     MIC NOVA
                   </p>
                   <div className="flex justify-between items-center w-full -mb-2">
-                    <p className="font-medium text-[1.1rem]">$189</p>
+                    <p className="font-medium text-[1.1rem]">$89</p>
                     <button className="w-8 h-8 bg-lime-300 rounded-full cursor-pointer transition-all hover:bg-lime-400">
                       +
                     </button>
@@ -434,19 +436,31 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col items-center justify-between py-3 rounded-xl h-36 lg:h-62 bg-white  transition-all duration-150 ease-in hover:scale-105 cursor-pointer">
-              <img src="./b2b-wireless.webp" alt="" className="w-22 lg:w-45 mt-2 lg:mt-5" />
+              <img
+                src="./b2b-wireless.webp"
+                alt=""
+                className="w-22 lg:w-45 mt-2 lg:mt-5"
+              />
               <p className="text-[0.8rem] lg:text-xl font-mono font-medium">
                 B2B Wireless
               </p>
             </div>
             <div className="flex flex-col items-center justify-between py-3 rounded-xl h-36 lg:h-62 bg-white  transition-all duration-150 ease-in hover:scale-105 cursor-pointer">
-              <img src="./ps4_vr_headset.webp" alt="" className="w-22 lg:w-45 mt-5 lg:mt-10" />
+              <img
+                src="./ps4_vr_headset.webp"
+                alt=""
+                className="w-22 lg:w-45 mt-5 lg:mt-10"
+              />
               <p className="text-[0.8rem] lg:text-xl font-mono font-medium">
                 Black Headset
               </p>
             </div>
             <div className="flex flex-col items-center justify-between py-3 rounded-xl h-36 lg:h-62 bg-white  transition-all duration-150 ease-in hover:scale-105 cursor-pointer">
-              <img src="./VerisonGTech 2000.jpg" alt="" className="w-22 lg:w-45" />
+              <img
+                src="./VerisonGTech 2000.jpg"
+                alt=""
+                className="w-22 lg:w-45"
+              />
               <p className="text-[0.8rem] lg:text-xl font-mono font-medium">
                 Verison GTech 2000
               </p>
@@ -460,6 +474,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <TestimonialsSection/>
+      <NewsletterSection />
+      
+      <Footer/>
+
     </div>
   );
 };
